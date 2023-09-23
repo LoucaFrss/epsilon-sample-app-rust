@@ -9,8 +9,8 @@ This is a sample [Rust](https://www.rust-lang.org) app to use on a [NumWorks cal
 ```rust
 fn eadk_main() {
     for _ in 0..100 {
-        let c = Color { rgb565: random() };
-        let r = Rect { x: random_coordinate(), y: random_coordinate(), width: random_coordinate(), height: random_coordinate() };
+        let c: Color = random() ;
+        let r: Rect = random();
         eadk::display::push_rect_uniform(r, c);
     }
     loop {}

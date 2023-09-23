@@ -1,0 +1,7 @@
+[target.thumbv7em-none-eabihf]
+runner = './runner.bat'
+rustflags = ["-C", "link-arg=--relocatable", "-C", "link-arg=-no-gc-sections"]
+
+[build]
+rustflags = ["+nightly"]
+target = "thumbv7em-none-eabihf"
